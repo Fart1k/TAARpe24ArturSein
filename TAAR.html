@@ -5,140 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarkvara arendusprotsess</title>
+    <link rel="stylesheet" href="static/styles/style.css">
 </head>
 
 <body>
-    <h1 class="header">Mis on tarkvaraarenduse elutsükkel?</h1>
-    <p class="paragraph">
-        Tarkvaraarenduse elutsükkel on protsess, mille käigus tarkvara arendatakse, testitakse, juurutatakse ja
-        hooldatakse. See hõlmab erinevaid etappe, nagu nõuete analüüs, disain, arendus, testimine ja hooldus. Elutsükli
-        eesmärk on tagada tarkvara kvaliteet ja vastavus kasutajate vajadustele.
-    </p>
 
-    <h2>Mis on tarkvaratoode?</h2>
-    <p class="paragraph">
-        Tarkvaratoode on tarkvara, mis on loodud konkreetse eesmärgi saavutamiseks ja mida saab kasutada erinevates
-        keskkondades. See võib olla rakendus, süsteem või teenus, mis pakub kasutajatele teatud funktsionaalsust.
-        Tarkvaratooded võivad olla kommertstooted, avatud lähtekoodiga projektid, kohandatud lahendused või ükskõik mis
-        muu rakendus mis kasutaja jaoks midagi ära teeb.
-    </p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Avaleht</a></li>
+        </ul>
+    </nav>
 
-    <h1 class="header">Mis on tarkvaraarenduse elutsükli eesmärk?</h1>
-    <p class="paragraph">
-        Tarkvaraarenduse elutsükli eesmärk on tagada, et tarkvara arendamine toimub struktureeritud ja organiseeritud
-        viisil, mis võimaldab saavutada kõrge kvaliteediga tarkvara, mis vastab kasutajate vajadustele. Elutsükli
-        järgimine aitab vältida vigu, parandada koostööd meeskonnas ja tagada, et tarkvara on usaldusväärne, turvaline
-        ja
-        hõlpsasti hooldatav.
-    </p>
+    <div class="container">
+        <div class="card">
+            <h1>Mis on tarkvaraarenduse elutsükkel?</h1>
+            <p class="intro dropcap">
+                Tarkvaraarenduse elutsükkel on protsess, mille käigus tarkvara arendatakse,
+                testitakse, juurutatakse ja hooldatakse.
+            </p>
+            <p>
+                See hõlmab erinevaid etappe, nagu
+                <span class="highlight">nõuete analüüs</span>,
+                <span class="highlight">disain</span>,
+                <span class="highlight">arendus</span>,
+                <span class="highlight">testimine</span> ja
+                <span class="highlight">hooldus</span>.
+                Eesmärk on tagada tarkvara kvaliteet ja vastavus kasutajate vajadustele.
+            </p>
+        </div>
 
-    <h1 class="header">Milline näeb välja tüüpiline tarkvaraarenduse elutsükkel?</h1>
-    <p class="paragraph">
-        Tüüpiline tarkvaraarenduse elutsükkel koosneb mitmest järjestikusest etapist, sealhulgas:
-    <ul class="listOfSteps">
-        <li>Nõuete analüüs</li>
-        <li>Projekteerimine ja/või kavandamine</li>
-        <li>Teostus</li>
-        <li>Testimine</li>
-        <li>Hooldus</li>
-    </ul>
-    Olenevalt mudelist võivad need etapid olla järjestatud erinevalt, kuid üldiselt järgivad nad sarnast struktuuri, mis
-    võimaldab tarkvara arendamist ja hooldust efektiivselt hallata.
-    </p>
+        <div class="card">
+            <h2>Mis on tarkvaratoode?</h2>
+            <p>
+                Tarkvaratoode on tarkvara, mis on loodud konkreetse eesmärgi saavutamiseks ja mida saab kasutada
+                erinevates
+                keskkondades. See võib olla rakendus, süsteem või teenus, mis pakub kasutajatele teatud
+                funktsionaalsust.
+                Tarkvaratooded võivad olla kommertstooted, avatud lähtekoodiga projektid, kohandatud lahendused või
+                ükskõik
+                mis muu rakendus mis kasutaja jaoks midagi ära teeb.
+            </p>
+        </div>
 
-    <h2>Mida nendes etappides tehakse?</h2>
-    <p class="paragraph">
-    <h3>Nõuete analüüs</h3>
-    <p class="paragraph">
-        Selles etapis kogutakse ja analüüsitakse tarkvara nõuded, mis võivad hõlmata funktsionaalseid (eht mida päriselt
-        toode tegema peaks) ja mittefunktsionaalseid (ehk kuidas välja näeb, palju korraga kasutada saab, millisel
-        riistvara jooksma peab)
-        nõudeid. Nõuete analüüs aitab mõista, mida tarkvara peab tegema ja millised on kasutajate ootused.
-        <br>
-        Näiteks oleks kalorikalkulaatoril sellised nõuded:
-    <table class="requirements-table">
-        <tr>
-            <th>Funktsionaalsed nõuded</th>
-            <th>Mittekfunktsionaalsed nõuded</th>
-        </tr>
-        <tr>
-            <td>Programm lubab kasutajal arvutada oma päevast tarbimist.</td>
-            <td>Kasutajal on lihtne ja mugav programmiaknas navigeerida.</td>
-        </tr>
-        <tr>
-            <td>Programm laseb kasutajal valida olemasolevaid tooteid.</td>
-            <td>Programm toetab vaegnägijaile programmi kasutust.</td>
-        </tr>
-        <tr>
-            <td>Kasutaja saab arvutada kaloreid kodus tehtud söögi kohta.</td>
-            <td>Programm ei hõiva ebaloogilist palju kasutaja süsteemiressursse.</td>
-        </tr>
-        <tr>
-            <td>Programm saadab telefonile märguandeid hoiatuste ja eesmärkide saavutatuse kohta.</td>
-            <td>Programm ei salvesta kasutaja isiklikku infot serveris.</td>
-        </tr>
-    </table>
-    </p>
+        <div class="card">
+            <h2>Mis on tarkvaraarenduse elutsükli eesmärk?</h2>
+            <p>
+                Tarkvaraarenduse elutsükli eesmärk on tagada, et tarkvara arendamine toimub struktureeritud ja
+                organiseeritud
+                viisil, mis võimaldab saavutada kõrge kvaliteediga tarkvara, mis vastab kasutajate vajadustele.
+                Elutsükli
+                järgimine aitab vältida vigu, parandada koostööd meeskonnas ja tagada, et tarkvara on usaldusväärne,
+                turvaline
+                ja
+                hõlpsasti hooldatav.
+            </p>
+        </div>
 
-    <h3>Projekteerimine</h3>
-    <p class="paragraph">
-        Siin määratakse ära süsteemi sisemine arhitektuur, osised, liidesed ja muud vajalikud omadused.
-        Selle töö tulemusena tekib arendatavast tarkvaraprojektist kavand. Selles etapis analüüsitakse
-        eelnevas etapis paikapandud nõudeid ja kirjeldatakse selle abil struktuur. Projekti kavand ongi
-        aluseks kuidas järgmises etapis projekti teostama hakatakse.
-        Mõnikord aga jaotatakse kavandamisetapp kaheks, kus üleüldine struktuur selgitatakse välja detailidest
-        eraldi.
-        <br>
-        Neid jaotatakse siis omakorda eraldi kaheks alametapiks:
+        <div class="card">
+            <h2>Milline näeb välja tüüpiline tarkvaraarenduse elutsükkel?</h2>
 
-    <table class="projektEtap">
-        <tr>
-            <th>Arhitektuuri kavandamisetapp</th>
-            <th>Detailide kavandamisetapp</th>
-        </tr>
-        <tr>
-            <td>Arhitektuuri kavandamises keskendutakse siis üleüldisele struktuurile: määratakse ära erinevad kõrgema
-                taseme komponendid, seosed teiste tarkvara osade vahel, jms.</td>
-            <td>Detailses kavandamisetapis aga keskendutakse juba individuaalsetele komponentidele, funktsioonidele,
-                objektidele, algoritmidele jms.
-            </td>
-        </tr>
-    </table>
-    </p>
+            <p>
+                Tüüpiline tarkvaraarenduse elutsükkel koosneb mitmest järjestikusest etapist, sealhulgas:
+            </p>
+            <ul class="custom-list">
+                <li>Nõuete analüüs</li>
+                <li>Projekteerimine ja/või kavandamine</li>
+                <li>Teostus</li>
+                <li>Testimine</li>
+                <li>Hooldus</li>
+            </ul>
+            <p>
+                Olenevalt mudelist võivad need etapid olla järjestatud erinevalt, kuid üldiselt järgivad nad sarnast
+                struktuuri,
+                mis
+                võimaldab tarkvara arendamist ja hooldust efektiivselt hallata.
+            </p>
+        </div>
 
-    <h3>Teostus</h3>
-    <p class="paragraph">
-        Selles etapis, põhinedes eelnevalt paika pandud kavandile, algabki arendustöö mille käigus reaalselt nüüd
-        tarkvaratoode valmis saadaksegi. Kuna eelnevalt kirjeldati ka süsteemi pisidetailid, saab siin rakendada kogu
-        arendusmeeskonda samaaegselt, kus iga liige või iga alamgrupp arendab ühte kirjeldatud detaili. Kogu projekt on
-        eri
-        osade kaudu paralleelselt arenduses. Selle etapi lõpupoole toimub ka testimine, otsitakse vigu, nii koodis kui
-        ka
-        kasutaja vaatepunktist, ja tagatakse, et valmistatav tarkvaratoode on üleüldiselt veavaba ning omab kõrget
-        käitluskvaliteeti.
-    </p>
+        <div class="card">
+            <h3>Nõuete analüüs</h3>
+            <p>
+                Selles etapis kogutakse ja analüüsitakse tarkvara nõuded, mis võivad hõlmata funktsionaalseid (eht mida
+                päriselt
+                toode tegema peaks) ja mittefunktsionaalseid (ehk kuidas välja näeb, palju korraga kasutada saab,
+                millisel
+                riistvara jooksma peab)
+                nõudeid. Nõuete analüüs aitab mõista, mida tarkvara peab tegema ja millised on kasutajate ootused.
+                <br>
+                Näiteks oleks kalorikalkulaatoril sellised nõuded:
+            </p>
+            <table>
+                <tr>
+                    <th>Funktsionaalsed nõuded</th>
+                    <th>Mittekfunktsionaalsed nõuded</th>
+                </tr>
+                <tr>
+                    <td>Programm lubab kasutajal arvutada oma päevast tarbimist.</td>
+                    <td>Kasutajal on lihtne ja mugav programmiaknas navigeerida.</td>
+                </tr>
+                <tr>
+                    <td>Programm laseb kasutajal valida olemasolevaid tooteid.</td>
+                    <td>Programm toetab vaegnägijaile programmi kasutust.</td>
+                </tr>
+                <tr>
+                    <td>Kasutaja saab arvutada kaloreid kodus tehtud söögi kohta.</td>
+                    <td>Programm ei hõiva ebaloogilist palju kasutaja süsteemiressursse.</td>
+                </tr>
+                <tr>
+                    <td>Programm saadab telefonile märguandeid hoiatuste ja eesmärkide saavutatuse kohta.</td>
+                    <td>Programm ei salvesta kasutaja isiklikku infot serveris.</td>
+                </tr>
+            </table>
+        </div>
 
-    <h3>Testimine</h3>
-    <p class="paragraph">
-        Selles etapis kontrollitakse tarkvara kvaliteeti, veendudes, et see vastab nõuetele ja töötab ootuspäraselt.
-        Testimine võib hõlmata erinevaid meetodeid, nagu üksustestid, integratsioonitestid, süsteemitestid ja
-        kasutajatestid.
-        Eesmärk on tuvastada ja parandada vigu ning tagada, et tarkvara on usaldusväärne ja kasutajasõbralik.
-    </p>
+        <div class="card">
+            <h3>Projekteerimine</h3>
+            <p>
+                Siin määratakse ära süsteemi sisemine arhitektuur, osised, liidesed ja muud vajalikud omadused.
+                Selle töö tulemusena tekib arendatavast tarkvaraprojektist kavand. Selles etapis analüüsitakse
+                eelnevas etapis paikapandud nõudeid ja kirjeldatakse selle abil struktuur. Projekti kavand ongi
+                aluseks kuidas järgmises etapis projekti teostama hakatakse.
+                Mõnikord aga jaotatakse kavandamisetapp kaheks, kus üleüldine struktuur selgitatakse välja detailidest
+                eraldi.
+                <br>
+                Neid jaotatakse siis omakorda eraldi kaheks alametapiks:
+            </p>
+            <table>
+                <tr>
+                    <th>Arhitektuuri kavandamisetapp</th>
+                    <th>Detailide kavandamisetapp</th>
+                </tr>
+                <tr>
+                    <td>Arhitektuuri kavandamises keskendutakse siis üleüldisele struktuurile: määratakse ära erinevad
+                        kõrgema
+                        taseme komponendid, seosed teiste tarkvara osade vahel, jms.</td>
+                    <td>Detailses kavandamisetapis aga keskendutakse juba individuaalsetele komponentidele,
+                        funktsioonidele,
+                        objektidele, algoritmidele jms.
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-    <h3>Hooldus</h3>
-    <p class="paragraph">
-        Pärast tarkvara juurutamist ja kasutuselevõttu algab hooldusfaas, kus tarkvara jälgitakse, parandatakse vigu,
-        lisatakse uusi funktsioone ja tagatakse, et see jätkuvalt vastab kasutajate vajadustele. Hooldus võib hõlmata ka
-        tarkvara optimeerimist ja kohandamist muutuvate tehnoloogiate ja turutingimustega.
-    </p>
+        <div class="card">
+            <h3>Teostus</h3>
+            <p>
+                Selles etapis, põhinedes eelnevalt paika pandud kavandile, algabki arendustöö mille käigus reaalselt
+                nüüd
+                tarkvaratoode valmis saadaksegi. Kuna eelnevalt kirjeldati ka süsteemi pisidetailid, saab siin rakendada
+                kogu
+                arendusmeeskonda samaaegselt, kus iga liige või iga alamgrupp arendab ühte kirjeldatud detaili. Kogu
+                projekt
+                on
+                eri
+                osade kaudu paralleelselt arenduses. Selle etapi lõpupoole toimub ka testimine, otsitakse vigu, nii
+                koodis
+                kui
+                ka
+                kasutaja vaatepunktist, ja tagatakse, et valmistatav tarkvaratoode on üleüldiselt veavaba ning omab
+                kõrget
+                käitluskvaliteeti.
+            </p>
+        </div>
 
-    <h1 class="header">Erinevad Tarkvaraarenduse Elutsükli Mudelid</h1>
-    <ul class="models-list">
-        <li><a href="#">Waterfall ehk Kosemudel</a></li>
-        <li><a href="#">Incremental ehk Inkrementaalmudel</a></li>
-        <li><a href="#">Spiral ehk Spiraalmudel</a></li>
-        <li><a href="#">Prototyping ehk Prototüüpimine</a></li>
-    </ul>
+        <div class="card">
+            <h3>Testimine</h3>
+            <p>
+                Selles etapis kontrollitakse tarkvara kvaliteeti, veendudes, et see vastab nõuetele ja töötab
+                ootuspäraselt.
+                Testimine võib hõlmata erinevaid meetodeid, nagu üksustestid, integratsioonitestid, süsteemitestid ja
+                kasutajatestid.
+                Eesmärk on tuvastada ja parandada vigu ning tagada, et tarkvara on usaldusväärne ja kasutajasõbralik.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Hooldus</h3>
+            <p>
+                Pärast tarkvara juurutamist ja kasutuselevõttu algab hooldusfaas, kus tarkvara jälgitakse, parandatakse
+                vigu,
+                lisatakse uusi funktsioone ja tagatakse, et see jätkuvalt vastab kasutajate vajadustele. Hooldus võib
+                hõlmata ka
+                tarkvara optimeerimist ja kohandamist muutuvate tehnoloogiate ja turutingimustega.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2 class="header">Erinevad Tarkvaraarenduse Elutsükli Mudelid</h2>
+            <ul class="custom-list">
+                <li><a class="btn" href="#">Waterfall ehk Kosemudel</a></li>
+                <li><a class="btn" href="#">Incremental ehk Inkrementaalmudel</a></li>
+                <li><a class="btn" href="#">Spiral ehk Spiraalmudel</a></li>
+                <li><a class="btn" href="#">Prototyping ehk Prototüüpimine</a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,193 @@
+/* ===== Global Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7fa;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* ===== Navigation ===== */
+nav {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    padding: 15px 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* ===== Container ===== */
+.container {
+    width: 75%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+/* ===== Headings ===== */
+h1 {
+    font-size: 2.8rem;
+    color: #1e3c72;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #2a5298;
+    margin: 35px 0 15px 0;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* ===== Paragraph Styling ===== */
+p {
+    font-size: 1.05rem;
+    color: #555;
+    margin-bottom: 18px;
+    letter-spacing: 0.3px;
+}
+
+/* Intro Paragraph */
+.intro {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #444;
+}
+
+/* Drop Cap Effect */
+.dropcap::first-letter {
+    float: left;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: bold;
+    margin-right: 8px;
+    color: #2a5298;
+}
+
+/* Highlighted Text */
+.highlight {
+    background: linear-gradient(120deg, #e6f0ff 0%, #d0e2ff 100%);
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+/* Accent Left Border Paragraph */
+.accent {
+    border-left: 4px solid #2a5298;
+    padding-left: 15px;
+    background: #f8fbff;
+}
+
+/* ===== Card Section ===== */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    margin-bottom: 35px;
+}
+
+/* ===== Table Styling ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+thead {
+    background: #2a5298;
+    color: white;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background: #f2f6fc;
+}
+
+tbody tr:hover {
+    background: #e6f0ff;
+}
+
+/* ===== Button ===== */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #2a5298;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #1e3c72;
+}
+
+/* ===== Modern List Styling ===== */
+ul.custom-list {
+    list-style: none;
+    padding: 20px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+ul.custom-list li {
+    position: relative;
+    padding: 12px 15px 12px 35px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    color: #555;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Custom bullet */
+ul.custom-list li::before {
+    content: "●";
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #2a5298;
+    font-size: 0.9rem;
+}
+
+/* Hover effect */
+ul.custom-list li:hover {
+    background: #f2f6fc;
+    transform: translateX(5px);
+}
