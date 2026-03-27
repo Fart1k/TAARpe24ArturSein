@@ -1,11 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spiraalne mudel</title>
+    <link rel="stylesheet" href="../static/styles/style.css">
 </head>
+
 <body>
-    
+
+    <nav>
+        <a href="../TAAR.html">Tagasi</a>
+    </nav>
+
+    <div class="container">
+
+        <h1>Spiraalne mudel</h1>
+
+        <div class="card">
+            <h2>Üldiselt</h2>
+
+            <p>
+                Spiraalmudel on iteratiivne ja riskidele orienteeritud tarkvaraarenduse mudel. Mudelit kujutatakse spiraalina, kus iga ring ehk iteratsioon sisaldab kogu
+                arendusprotsessi tsüklit: planeerimist, riskianalüüsi, arendust ja ülevaatust. Iga iteratsioon annab
+                tulemuse, mida saab edasi täiustada järgmistes tsüklites.
+            </p>
+
+            <p>
+                <span>Iteratiivne arendus</span> tähendab olemasolevate süsteemi osade korduvat parandamist ja
+                täiustamist.
+                Arendus toimub tsüklitena, nn iteratsioonidena, mille käigus süsteemi muudetakse ja täisutatakse.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Põhiidee</h2>
+
+            <p>Spiraalmudel koosneb mitmest iteratsioonist, kus iga iteratsioon on:</p>
+            <ul>
+                <li>
+                    <p>Täielik arendustsükkel, mis hõlmab kõiki põhitegevusi;</p>
+                </li>
+                <li>
+                    <p>Keskendub konkreetsetele eesmärkidele ja riskidele;</p>
+                </li>
+                <li>
+                    <p>Lõppeb tulemuse ülevaatusega ja otsusega järgmise iteratsiooni kohta.</p>
+                </li>
+            </ul>
+            <p>
+                Iga iteratsioon võib sisaldada kõiki
+                arenduse osi.
+            </p>
+        </div>
+
+        <div class="card">
+
+            <h2>Etapid</h2>
+
+            <table>
+                <tr>
+                    <th>Etapp</th>
+                    <th>Kirjeldus</th>
+                </tr>
+                <tr>
+                    <td>Eesmärkide seadmine</td>
+                    <td>Määratletakse eesmärgid,
+                        <br>piirangud,
+                        <br> nõuded, 
+                        <br>võimalikud lahendused.</td>
+                </tr>
+                <tr>
+                    <td>Riskide hindamine ja maandamine</td>
+                    <td>Tuvastatakse ja analüüsitakse riske ning tehakse tegevusi nende vähendamiseks.</td>
+                </tr>
+                <tr>
+                    <td>Arendus ja valideerimine</td>
+                    <td>Valitakse sobiv arendusstrateegia ning arendatakse ja testitakse süsteemi osa.</td>
+                </tr>
+                <tr>
+                    <td>Planeerimine</td>
+                    <td>Ülevaatatakse tulemusi, kogutakse tagasisidet ja planeeritakse järgmine kordus.</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Joonis</h2>
+            <img src="../static/images/spiralmodel.png" alt="Spiraalne mudel">
+        </div>
+
+        <div class="card">
+            <h2>Head ja halvad küljed</h2>
+
+            <table>
+                <tr>
+                    <th>Head küljed</th>
+                    <th>Halvad küljed</th>
+                </tr>
+                <tr>
+                    <td>Väiksemad kulud nõuete muutumisel</td>
+                    <td>Projekti edenemist võib olla raskem jälgida</td>
+                </tr>
+                <tr>
+                    <td>Lihtsam saada kliendi tagasisidet juba valminud osadele</td>
+                    <td>Süsteemi struktuur võib pidevate muudatuste tõttu halveneda</td>
+                </tr>
+                <tr>
+                    <td>Tarkvara osasid saab kliendile kasutamiseks üle anda varem</td>
+                    <td>Vajalik võib olla regulaarne refaktoreerimine tarkvara kvaliteedi säilitamiseks</td>
+                </tr>
+                <tr>
+                    <td>Varased versioonid aitavad paremini mõista süsteemi edasisi nõudeid</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Agiilsed arendusmeetodid</h2>
+
+            <p>
+                Agiilsed meetodid põhinevad sageli inrkementaalsel arendusel ja rõhutuvad:
+            </p>
+
+            <ul class="custom-list">
+                <li>Inimesi ja sihtlemist rohkem kui protsesse ja tööriistu</li>
+                <li>Töötavad tarkvara rohkem kui dokumentatsiooni</li>
+                <li>Koostööd kliendiga rohkem kui lepingurääkimisi</li>
+                <li>Muudatustele reageerimist rohkem kui järgnev plaan</li>
+            </ul>
+
+            <p>
+                Tähtsal kohal on pidev tagasiside, testimine ja kasutajate kaasamine.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Tuntumad agiilsed meetodid</h2>
+
+            <ul class="custom-list">
+                <li><strong>Ekstreemprogrammeerimine (XP)</strong></li>
+                <li><strong>Scrum</strong></li>
+                <li><strong>Feature Driven Development (FDD)</strong></li>
+                <li><strong>Open Unified Process (OpenUP)</strong></li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Ekstreemprogrammeerimine (XP)</h2>
+
+            <p>
+                Ekstreemprogrammeerimine (XP) on agiilne arendusmeetod, mis rõhutab pidevat tagasisidet, testimist ja
+                koostööd. XP-s on olulised praktikad nagu paarisprogrammeerimine, pidev integreerimine, testide
+                kirjutamine enne koodi
+                kirjutamist (test-driven development) ja regulaarne refaktoreerimine.
+                <br><br>
+                Selle meetodi iseloomulikud jooned on ka
+                <span>väga lühikesed arendustsüklid (päevad või nädalad)</span>,
+                <span>automatiseeritud testide kirjutamine enne koodi kirjutamist</span>,
+                <span>paarisprogrammeerimine</span> ja
+                <span>iga iteratsiooni lõpus peab kood läbima kõik testid</span>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Infoallikad</h2>
+
+            <ul class="custom-list">
+                <li><a href="https://www.sovereignconsult.com/blog/spiral-model-methodology/">SovereignConsult</a></li>
+                <li><a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1223_spiraalmudel.html">E-opearhiiv</a></li>
+                <li><a href="https://teachingagile.com/sdlc/models/spiral#phase-1-planning-identification">Teaching Agile</a></li>
+                <li><a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-spiral-model/">GeeksforGeeks</a></li>
+            </ul>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
