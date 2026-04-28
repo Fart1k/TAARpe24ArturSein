@@ -36,30 +36,113 @@
       </div>
 
       <div class="card">
-        <h2>Use Case Diagramm</h2>
+        <h2>Use Case Diagram</h2>
         <h3>Lühikirjeldus</h3>
         <p>
-          Use Case diagramm kirjeldab süsteemi funktsionaalsust kasutaja
+          Use Case diagram kirjeldab süsteemi funktsionaalsust kasutaja
           vaatenurgast. See näitab,
           <span>mida kasutaja saab süsteemiga teha,</span> mitte kuidas süsteem
           töötab.
         </p>
         <h3>Kujundid ja elemendid</h3>
         <p>
-
+          <ul><li>Stickman - Kasutaja</li></ul>
+          <ul><li>Ovaal - Funktsioon või tegevus</li></ul>
+          <ul><li>Joon - Seos kasutaja ja funktsiooni vahel</li></ul>
+          <ul><li>Include - Kohustuslik tegevus</li></ul>
+          <ul><li>Extend - Valikuline tegevus</li></ul>
         </p>
+
+        <h3>Näidis</h3>
+        <img src="../static/images/UseCase.png" alt="UseCase pilt">
       </div>
 
       <div class="card">
-        <h2>Class Diagramm</h2>
+        <h2>Class Diagram</h2>
+
+        <h3>Lühikirjeldus</h3>
+        <p>
+          Class diagram <span>kirjeldab süsteemi struktuuri objektorienteeritud vaated</span>. 
+          See näitab klasse, nende omadusi ja meetodeid ning nende vahelised seosed.
+        </p>
+
+        <h3>Kujundid ja elemendid</h3>
+        <p>
+          <ul><li>Ristkülik - Klass. On jagatud kolmeks osaks: Klassi nimi, atribuudid ja meetodid.</li></ul>
+          <ul><li>Tavaline joon - Seos klasside vahel.</li></ul>
+          <ul><li>Tühi romb joone otsas (Agregatsioon) - Tähendab, et osad kuuluvad tervikule, aga saavad eksisteerida ka eraldi.</li></ul>
+          <ul><li>Täidetud romb joone otsas (Composition) - Tähendab, et osad kuuluvad tervikule ja ei saa eksisteerida eraldi.</li></ul>
+          <ul><li>Kolmnurkne tühi nool (Generalization) - Pärilus.</li></ul>
+          <ul><li>Katkendjoon noolega (Dependency) - Tähendab, et üks klass kasutab teist.</li></ul>
+        </p>
+
+        <h3>Näidis</h3>
+        <img src="../static/images/ClassDiagramm.webp" alt="ClassDiagramm pilt">
       </div>
 
       <div class="card">
-        <h2>Sequence Diagramm</h2>
+        <h2>Sequence Diagram</h2>
+
+        <h3>Lühikirjeldus</h3>
+        <p>
+          Sequence diagram <span>näitab, kuidas objektid suhtlevad ajas.</span> See keskendub sõnumite järjekorrale. 
+        </p>
+
+        <h3>Kujundid ja elemendid</h3>
+        <p>
+          <ul><li>Stickman - Kasutaja.</li></ul>
+          <ul><li>Lifeline - Vertikaalne joon, mis näitab objekti olemasolu ajas. Näitab, millal objekt töötab</li></ul>
+          <ul><li>Activation - Vertikaalne ristkülik lifeline peal.</li></ul>
+          <ul><li>Täisjoon noolega - Tavaline sõnum, näitab meetodi väljakutset.</li></ul>
+          <ul><li>Raam - Loop(Kordus), alt(if/else), </li></ul>
+          <ul><li>X - Objekti hävitamine.</li></ul>
+        </p>
+
+        <h3>Näidis</h3>
+        <img src="../static/images/SequenceDiagramm.webp" alt="">
       </div>
 
       <div class="card">
-        <h2>State Diagramm</h2>
+        <h2>State Diagram</h2>
+
+        <h3>Lühikirjeldus</h3>
+        <p>
+          State diagram <span>kirjeldab objekti olekuid ja nende muutumist ajas.</span> 
+          Seda kasutatakse süsteemide käitumise modelleerimiseks. 
+        </p>
+
+        <h3>Kujundid ja elemendid</h3>
+        <p>
+          <ul><li>Ristkülik - Objekti seisund</li></ul>
+          <ul><li>Nooled - Üleminek ühest olekust teise</li></ul>
+          <ul><li>Täidetud ring - Objekti algolek</li></ul>
+          <ul><li>Topeliring - Objekti lõppolek</li></ul>
+        </p>
+
+        <h3>Näidis</h3>
+        <img src="../static/images/StateDiagram.webp" alt="StateDiagram pilt">
+      </div>
+
+      <div class="card">
+        <h2>Composite Structure Diagram</h2>
+
+        <h3>Lühikirjeldus</h3>
+        <p>
+          Composite Structure Diagram <span>kirjeldab, kuidas üks klass või komponent on sisemiselt üles ehitatud.</span>.
+          See näitab objekti või süsteemi osa sisemisi elemente ja nendevahelisi ühendusi.
+        </p>
+
+        <h3>Kijundid ja elemendid</h3>
+        <p>
+          <ul><li>Classifier - Klass, mille sisse vaadatakse</li></ul>
+          <ul><li>Ristkülikud - Sisemised klassid, millest süsteem koosneb</li></ul>
+          <ul><li>Ruudud classifier serval - Pordid, nad näitavad kust kaudu komponent suhtleb välismaailmaga</li></ul>
+          <ul><li>Jooned osade või portide vahel - Ühendused, näitavad kuidas objektid omavahel suhtlevad</li></ul>
+          <ul><li>Rollid - näitavad, millist rolli mingi osa täidab süsteemis</li></ul>
+        </p>
+
+        <h3>Näide</h3>
+        <img src="../static/images/CompositeStructureDiagram.png" alt="">
       </div>
 
       <div class="card">
