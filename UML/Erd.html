@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/style.css">
+    <title>ERD</title>
+</head>
+<body>
+    <nav>
+        <hr />
+        <a href="../TAAR.html">Tagasi</a>
+      </nav>
+
+      <div class="container">
+        <h1>ERD</h1>
+
+        <div class="card">
+            <h2>Mis see on?</h2>
+            <p>
+                Entity-Relationship Diagram on andmebaaside modelleerimise vahend, 
+                mida <span>kasutatakse süsteemi andmestruktuuri ja seoste visualiseerimiseks</span>
+            </p>
+            <p>
+                See näitab:
+                <ul>
+                    <li>Millised tabelid eksisteerivad</li>
+                    <li>Millised on nende atribuudid</li>
+                    <li>Kuidas need on omavahel seotud</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Kus seda kasutatakse?</h2>
+            <p>
+                ERD kasutatakse:
+                <ul>
+                    <li>Andmebaasi disain</li>
+                    <li>Andmebaasi tõrkeotsing</li>
+                    <li>Äriinfosüsteemid</li>
+                    <li>Äriprotsesside ümberkujundamine</li>
+                    <li>Haridus</li>
+                    <li>Uuringud</li>
+                </ul>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Ühenduselemendid ja nende tähendused</h2>
+            <img src="../static/images/OneToOne.png" alt="OneToOne">
+            <p>
+                Siin on kujutatud seos üks ühele. Ühel kasutajal on üks profiil ja
+                profiil kuulub ainult ühele kasutajale
+            </p>
+
+            <img src="../static/images/OneToMany.png" alt="OneToMany">
+            <p>
+                Siin on kujutatud seos üks mitmele või mitte ühele. Üks kasutaja võib teha mitu tellimust ja
+                iga tellimus kuulub ühele kasutajale.
+            </p>
+
+            <img src="../static/images/ManyToMany.png" alt="ManyToMany">
+            <p>
+                Siin on kujutatud seos mitu mitmele. Ühel tudengil saab olla mitu kursust ja
+                ühel kursusel saab olla mitu tudengit.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Olemitabel</h2>
+            
+            <h3>Mis seal peab olema?</h3>
+            <p>
+                Igas tabelis peab olema:
+                <ul>
+                    <li>Primary Key</li>
+                    <li>Atribuudid</li>
+                </ul>
+            </p>
+
+            <h3>Mis seal võib olla?</h3>
+            <p>
+                Igas tabelis saab olla:
+                <ul>
+                    <li>Foreign Key</li>
+                    <li>Piirangud</li>
+                </ul>
+            </p>
+
+            <h3>Näide</h3>
+            <img src="../static/images/EntityTable.png" alt="EntityTable">
+        </div>
+
+        <div class="card">
+            <h2>Võtmete selgitus</h2>
+
+            <h3>Primary Key</h3>
+            <p>
+                Primary key ehk primaarvõti, on võti, mis iseloomustab rida see võib olla ainult üks tabelis,
+                 ei saa olla NULL ja ei saa korduda.
+            </p>
+            <img src="../static/images/PrimaryKey.png" alt="PrimaryKey">
+            <p>
+                StudentId on primary key ja see kunagi ei saa korduda.
+            </p>
+
+            <h3>Foreign Key</h3>
+            <p>
+                Foreign key ehk võõrvõti, on võti, mis oli primaarvõti omas tabelis,
+                aga läks teises ja seal ta sai võõrvõtmeks. 
+            </p>
+            <img src="../static/images/ForeignKey.png" alt="ForeignKey">
+            <p>
+                Näiteks siin on näha, et Stud_Id oli primaarvõti ja kui seda pandi teise tabelisse ta muutus võõrvõtmeks.
+            </p>
+
+            <h3>Composite Key</h3>
+            <p>
+                Composite key on primaarvõti, mis jagatakse kaheks või enamaks osaks.
+            </p>
+            <img src="../static/images/CompoundKey.png" alt="CompoundKey">
+
+            <h3>Key</h3>
+            <p>
+                Võtmed on spetsiaalsed väljad või väljade komplektid, mis aitavad tuvastada ja luua seoseid eri tabelite kirjete vahel.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Infoallikad</h2>
+
+            <ul class="custom-list">
+                <li><a href="https://www.lucidchart.com/pages/er-diagrams">Lucidchart</a></li> 
+                <li><a href="https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/">Visual-Paradigm</a></li>   
+                <li><a href="https://www.geeksforgeeks.org/dbms/introduction-of-er-model/">GeeksforGeeks</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Composite_key">Wikipedia</a></li>
+                <li><a href="https://www.baeldung.com/sql/key-types#:~:text=Keys%20in%20SQL%20are%20special,efficient%20querying%20and%20data%20manipulation.">Baeldung</a></li>
+                <li><a href="https://docs.google.com/document/d/1zaxBdb3Lii1si9KzBJEytl8KXOGRU9hiZIH1WD-puOY/edit?usp=sharing">GoogleDocs</a></li>
+            </ul>
+        </div>
+      </div>
+</body>
+</html>
