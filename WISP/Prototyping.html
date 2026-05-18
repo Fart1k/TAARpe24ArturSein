@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prototüüpimine</title>
     <link rel="stylesheet" href="../static/styles/style.css">
 </head>
+
 <body>
     <nav>
         <a href="../TAAR.html">Tagasi</a>
@@ -16,9 +18,137 @@
         <h1>Prototüüpimine</h1>
 
         <div class="card">
+            <h2>Arendusmudeli kohta üldiselt</h2>
+
+            <p>
+                Prototüüpimine on tarkvaraarenduse meetod, kus enne lõpliku süsteemi loomist
+                valmistatakse süsteemist esialgne versioon ehk prototüüp.
+                <br>
+                Selle eesmärk on katsetada ideid, kontrollida
+                nõudeid ning saada kasutajatelt varajast tagasisidet. Prototüüp aitab paremini mõista kliendi vajadusi
+                ja
+                vähendada valede lahenduste loomise riski.
+            </p>
+
+        </div>
+
+        <div class="card">
+            <h2>Põhitõmbenumber</h2>
+
+            <p>
+                Prototüüpimise mudeli kõige olulisem tunnus on <span>varajase näidislahenduse loomine ja korduv täiustamine</span>.
+                <br>
+                Arendajad loovad kiiresti lihtsustatud süsteemi versiooni, mida kasutajad saavad testida. Seejärel
+                parandatakse prototüüpi saadud tagasiside põhjal nii kaua, kuni lahendus vastab kasutaja ootustele.
+                <br>
+                Oluline on, et prototüüp ei pea sisaldama kogu süsteemi funktsionaalsust, see keskendub peamiselt
+                nendele osadele, millest ei ole veel täielikult aru saadud.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Etappide järjestus</h2>
+            <p>
+                <h3>1. Nõuete kogumine</h3>
+                Kogutakse süsteemi esialgsed nõuded ja pannakse paika peamised eesmärgid.
+            </p>
+            <br>
+            <p>
+                <h3>2. Kiire kavandamine</h3>
+                Luuakse süsteemi lihtne mudel või kasutajaliidese esmane versioon.
+            </p>
+            <br>
+            <p>
+                <h3>3. Prototüübi loomine</h3>
+                Valmisatatakse töötav prototüüp, mida saab kasutajatele näidata ja testida.
+            </p>
+            <br>
+            <p>
+                <h3>4. Kasutaja hindamine</h3>
+                Kasutajad proovivad prototüüpi ning annavad tagasisidet selle kohta, mis töötab hästi ja mida tuleks muuta.
+            </p>
+            <br>
+            <p>
+                <h3>5. Parandamine ja iteratsioon</h3>
+                Prototüüpi täiustatakse saadud tagasiside põhjal. Seda protsessi korratakse, kuni saavutatakse rahuldav lahendus, 
+                mis vastab kasutaja vajadustele.
+            </p>
+            <br>
+            <p>
+                <h3>6. Lõpliku süsteemi loomine</h3>
+                Kui nõuded on piisavalt selged ja prototüüp vastab ootustele, alustatakse päris süsteemi arendamist.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Mudeli joonis</h2>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240312145433/prototyping-model-phases.gif" alt="Prototüübi mudeli joonis">
+        </div>
+
+        <div class="card">
+            <h2>Prototüüpimise tüübid</h2>
+            <p>
+                <h3>Ühekordne prototüüpimine</h3>
+                Prototüüp luuakse ainult nõuete täpsustamiseks ning hiljem eemaldatakse.
+            </p>
+            <br>
+            <p>
+                <h3>Evolutsiooniline prototüüpimine</h3>
+                Prototüüpi täiustatakse pidevalt ning sellest kasvab välja lõplik süsteem.
+            </p>
+            <br>
+            <p>
+                <h3>Lisanduv prototüüpimine</h3>
+                Süsteem jagatakse väiksemateks osadeks ning iga osa jaoks luuakse eraldi prototüüp.
+                Hiljem ühendatakse need osad terviklikuks süsteemiks.   
+            </p>
             
+        </div>
+
+        <div class="card">
+            <h2>Head ja halvad küljed</h2>
+            
+            <table>
+                <tr>
+                    <th>Head küljed</th>
+                    <th>Halvad küljed</th>
+                </tr>
+                <tr>    
+                    <td>Aitab paremini mõista nõudeid</td>
+                    <td>Võib võtta rohkem aega korduvate paranduste tegemiseks</td>
+                </tr>
+                <tr>
+                    <td>Kasutajad saavad varakult tagasisidet anda</td>
+                    <td>Klient võib arvata, et prototüüp on juba valmis süsteem</td>
+                </tr>
+                <tr>
+                    <td>Parandab süsteemi kasutusmugavust</td>
+                    <td>Dokumentatsioon ei ole alati ajakohane</td>
+                </tr>
+                <tr>
+                    <td>Vähendab valede nõuete ja vigade riski</td>
+                    <td>Mõnikord keskendutakse liiga palju välimusele.</td>
+                </tr>
+                <tr>
+                    <td>Võimaldab muudatusi teha juba arenduse alguses</td>
+                    <td>Kiirelt loodud prototüüp ei pruugi sobida lõpliku süsteemi aluseks</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="card">
+            <h2>Infoallikad</h2>
+
+            <ul class="custom-list">
+                <li><a href="https://eopearhiiv.edu.ee/e-kursused/eucip/arendus/1224_prototpimine.html">EUCIP</a></li>
+                <li><a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-prototyping-model/">GeeksforGeeks</a></li>
+                <li><a href="https://www.techtarget.com/searchcio/definition/Prototyping-Model">TechTarget</a></li>
+                <li><a href="https://www.guru99.com/software-engineering-prototyping-model.html">Guru99</a></li>
+                <li><a href="https://digiriik.eesti.ee/tooriist/prototuupimine?">Digiriik</a></li>
+            </ul>
         </div>
 
     </div>
 </body>
+
 </html>
